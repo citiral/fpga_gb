@@ -1,0 +1,29 @@
+C:/source/cgb/sram_bb.v {1 {vlog -work work -stats=none C:/source/cgb/sram_bb.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module sram
+
+Top level modules:
+	sram
+
+} {} {}} C:/source/cgb/SM83.v {1 {vlog -work work -stats=none C:/source/cgb/SM83.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module SM83
+
+Top level modules:
+	SM83
+
+} {} {}} C:/source/cgb/sram.v {1 {vlog -work work -stats=none C:/source/cgb/sram.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module sram
+
+Top level modules:
+	sram
+
+} {} {}} C:/source/cgb/DE0_Nano.v {1 {vlog -work work -stats=none C:/source/cgb/DE0_Nano.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module DE0_Nano
+
+Top level modules:
+	DE0_Nano
+
+} {} {}}

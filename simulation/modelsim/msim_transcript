@@ -1,0 +1,316 @@
+# Reading C:/intelFPGA/19.1/modelsim_ase/tcl/vsim/pref.tcl
+# do cgb_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 10.5b Lib Mapping Utility 2016.10 Oct  5 2016
+# vmap work rtl_work 
+# Copying C:/intelFPGA/19.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vlog -vlog01compat -work work +incdir+C:/Source/cgb {C:/Source/cgb/DE0_Nano.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:33:58 on Jul 10,2020
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Source/cgb" C:/Source/cgb/DE0_Nano.v 
+# -- Compiling module DE0_Nano
+# 
+# Top level modules:
+# 	DE0_Nano
+# End time: 16:33:58 on Jul 10,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Source/cgb {C:/Source/cgb/SM83.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:33:58 on Jul 10,2020
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Source/cgb" C:/Source/cgb/SM83.v 
+# -- Compiling module SM83
+# 
+# Top level modules:
+# 	SM83
+# End time: 16:33:58 on Jul 10,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Source/cgb {C:/Source/cgb/sram.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:33:58 on Jul 10,2020
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Source/cgb" C:/Source/cgb/sram.v 
+# -- Compiling module sram
+# 
+# Top level modules:
+# 	sram
+# End time: 16:33:58 on Jul 10,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+vsim work.DE0_Nano
+# vsim work.DE0_Nano 
+# Start time: 16:34:35 on Jul 10,2020
+# Loading work.DE0_Nano
+# Loading work.sram
+# ** Error: (vsim-3033) C:/Source/cgb/sram.v(63): Instantiation of 'altsyncram' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /DE0_Nano/SRAM File: C:/Source/cgb/sram.v
+#         Searched libraries:
+#             C:/source/cgb/simulation/modelsim/rtl_work
+# Loading work.SM83
+# Error loading design
+# End time: 16:34:35 on Jul 10,2020, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+vsim work.DE0_Nano -L altera_mf
+# vsim work.DE0_Nano -L altera_mf 
+# Start time: 16:34:47 on Jul 10,2020
+# Loading work.DE0_Nano
+# Loading work.sram
+# Loading work.SM83
+# ** Error (suppressible): (vsim-10000) C:/Source/cgb/sram.v(88): Unresolved defparam reference to 'altsyncram_component' in altsyncram_component.clock_enable_input_a.
+#    Time: 0 ps  Iteration: 0  Instance: /DE0_Nano/SRAM File: C:/Source/cgb/sram.v
+# ** Error (suppressible): (vsim-10000) C:/Source/cgb/sram.v(89): Unresolved defparam reference to 'altsyncram_component' in altsyncram_component.clock_enable_output_a.
+#    Time: 0 ps  Iteration: 0  Instance: /DE0_Nano/SRAM File: C:/Source/cgb/sram.v
+# ** Error (suppressible): (vsim-10000) C:/Source/cgb/sram.v(90): Unresolved defparam reference to 'altsyncram_component' in altsyncram_component.intended_device_family.
+#    Time: 0 ps  Iteration: 0  Instance: /DE0_Nano/SRAM File: C:/Source/cgb/sram.v
+# ** Error (suppressible): (vsim-10000) C:/Source/cgb/sram.v(91): Unresolved defparam reference to 'altsyncram_component' in altsyncram_component.lpm_hint.
+#    Time: 0 ps  Iteration: 0  Instance: /DE0_Nano/SRAM File: C:/Source/cgb/sram.v
+# ** Error (suppressible): (vsim-10000) C:/Source/cgb/sram.v(92): Unresolved defparam reference to 'altsyncram_component' in altsyncram_component.lpm_type.
+#    Time: 0 ps  Iteration: 0  Instance: /DE0_Nano/SRAM File: C:/Source/cgb/sram.v
+# ** Error (suppressible): (vsim-10000) C:/Source/cgb/sram.v(93): Unresolved defparam reference to 'altsyncram_component' in altsyncram_component.numwords_a.
+#    Time: 0 ps  Iteration: 0  Instance: /DE0_Nano/SRAM File: C:/Source/cgb/sram.v
+# ** Error (suppressible): (vsim-10000) C:/Source/cgb/sram.v(94): Unresolved defparam reference to 'altsyncram_component' in altsyncram_component.operation_mode.
+#    Time: 0 ps  Iteration: 0  Instance: /DE0_Nano/SRAM File: C:/Source/cgb/sram.v
+# ** Error (suppressible): (vsim-10000) C:/Source/cgb/sram.v(95): Unresolved defparam reference to 'altsyncram_component' in altsyncram_component.outdata_aclr_a.
+#    Time: 0 ps  Iteration: 0  Instance: /DE0_Nano/SRAM File: C:/Source/cgb/sram.v
+# ** Error (suppressible): (vsim-10000) C:/Source/cgb/sram.v(96): Unresolved defparam reference to 'altsyncram_component' in altsyncram_component.outdata_reg_a.
+#    Time: 0 ps  Iteration: 0  Instance: /DE0_Nano/SRAM File: C:/Source/cgb/sram.v
+# ** Error (suppressible): (vsim-10000) C:/Source/cgb/sram.v(97): Unresolved defparam reference to 'altsyncram_component' in altsyncram_component.power_up_uninitialized.
+#    Time: 0 ps  Iteration: 0  Instance: /DE0_Nano/SRAM File: C:/Source/cgb/sram.v
+# ** Error (suppressible): (vsim-10000) C:/Source/cgb/sram.v(98): Unresolved defparam reference to 'altsyncram_component' in altsyncram_component.read_during_write_mode_port_a.
+#    Time: 0 ps  Iteration: 0  Instance: /DE0_Nano/SRAM File: C:/Source/cgb/sram.v
+# ** Error (suppressible): (vsim-10000) C:/Source/cgb/sram.v(99): Unresolved defparam reference to 'altsyncram_component' in altsyncram_component.widthad_a.
+#    Time: 0 ps  Iteration: 0  Instance: /DE0_Nano/SRAM File: C:/Source/cgb/sram.v
+# ** Error (suppressible): (vsim-10000) C:/Source/cgb/sram.v(100): Unresolved defparam reference to 'altsyncram_component' in altsyncram_component.width_a.
+#    Time: 0 ps  Iteration: 0  Instance: /DE0_Nano/SRAM File: C:/Source/cgb/sram.v
+# ** Error (suppressible): (vsim-10000) C:/Source/cgb/sram.v(101): Unresolved defparam reference to 'altsyncram_component' in altsyncram_component.width_byteena_a.
+#    Time: 0 ps  Iteration: 0  Instance: /DE0_Nano/SRAM File: C:/Source/cgb/sram.v
+# Error loading design
+# End time: 16:34:48 on Jul 10,2020, Elapsed time: 0:00:01
+# Errors: 14, Warnings: 0
+vsim work.DE0_Nano -L altera_mf work
+# vsim work.DE0_Nano -L altera_mf work 
+# Start time: 16:34:55 on Jul 10,2020
+# Loading work.DE0_Nano
+# Loading work.sram
+# Loading work.SM83
+# ** Error: (vsim-3170) Could not find 'work'.
+#         Searched libraries:
+#             C:/intelFPGA/19.1/modelsim_ase/altera/vhdl/altera_mf
+#             C:/source/cgb/simulation/modelsim/rtl_work
+# Error loading design
+# End time: 16:34:56 on Jul 10,2020, Elapsed time: 0:00:01
+# Errors: 1, Warnings: 0
+vsim work.DE0_Nano -L altera_mf altera
+# vsim work.DE0_Nano -L altera_mf altera 
+# Start time: 16:35:01 on Jul 10,2020
+# Loading work.DE0_Nano
+# Loading work.sram
+# Loading work.SM83
+# ** Error: (vsim-3170) Could not find 'altera'.
+#         Searched libraries:
+#             C:/intelFPGA/19.1/modelsim_ase/altera/vhdl/altera_mf
+#             C:/source/cgb/simulation/modelsim/rtl_work
+# Error loading design
+# End time: 16:35:01 on Jul 10,2020, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+vsim work.DE0_Nano -L altera_mf -L altera
+# vsim work.DE0_Nano -L altera_mf -L altera 
+# Start time: 16:35:05 on Jul 10,2020
+# Loading work.DE0_Nano
+# Loading work.sram
+# Loading work.SM83
+# ** Error (suppressible): (vsim-10000) C:/Source/cgb/sram.v(88): Unresolved defparam reference to 'altsyncram_component' in altsyncram_component.clock_enable_input_a.
+#    Time: 0 ps  Iteration: 0  Instance: /DE0_Nano/SRAM File: C:/Source/cgb/sram.v
+# ** Error (suppressible): (vsim-10000) C:/Source/cgb/sram.v(89): Unresolved defparam reference to 'altsyncram_component' in altsyncram_component.clock_enable_output_a.
+#    Time: 0 ps  Iteration: 0  Instance: /DE0_Nano/SRAM File: C:/Source/cgb/sram.v
+# ** Error (suppressible): (vsim-10000) C:/Source/cgb/sram.v(90): Unresolved defparam reference to 'altsyncram_component' in altsyncram_component.intended_device_family.
+#    Time: 0 ps  Iteration: 0  Instance: /DE0_Nano/SRAM File: C:/Source/cgb/sram.v
+# ** Error (suppressible): (vsim-10000) C:/Source/cgb/sram.v(91): Unresolved defparam reference to 'altsyncram_component' in altsyncram_component.lpm_hint.
+#    Time: 0 ps  Iteration: 0  Instance: /DE0_Nano/SRAM File: C:/Source/cgb/sram.v
+# ** Error (suppressible): (vsim-10000) C:/Source/cgb/sram.v(92): Unresolved defparam reference to 'altsyncram_component' in altsyncram_component.lpm_type.
+#    Time: 0 ps  Iteration: 0  Instance: /DE0_Nano/SRAM File: C:/Source/cgb/sram.v
+# ** Error (suppressible): (vsim-10000) C:/Source/cgb/sram.v(93): Unresolved defparam reference to 'altsyncram_component' in altsyncram_component.numwords_a.
+#    Time: 0 ps  Iteration: 0  Instance: /DE0_Nano/SRAM File: C:/Source/cgb/sram.v
+# ** Error (suppressible): (vsim-10000) C:/Source/cgb/sram.v(94): Unresolved defparam reference to 'altsyncram_component' in altsyncram_component.operation_mode.
+#    Time: 0 ps  Iteration: 0  Instance: /DE0_Nano/SRAM File: C:/Source/cgb/sram.v
+# ** Error (suppressible): (vsim-10000) C:/Source/cgb/sram.v(95): Unresolved defparam reference to 'altsyncram_component' in altsyncram_component.outdata_aclr_a.
+#    Time: 0 ps  Iteration: 0  Instance: /DE0_Nano/SRAM File: C:/Source/cgb/sram.v
+# ** Error (suppressible): (vsim-10000) C:/Source/cgb/sram.v(96): Unresolved defparam reference to 'altsyncram_component' in altsyncram_component.outdata_reg_a.
+#    Time: 0 ps  Iteration: 0  Instance: /DE0_Nano/SRAM File: C:/Source/cgb/sram.v
+# ** Error (suppressible): (vsim-10000) C:/Source/cgb/sram.v(97): Unresolved defparam reference to 'altsyncram_component' in altsyncram_component.power_up_uninitialized.
+#    Time: 0 ps  Iteration: 0  Instance: /DE0_Nano/SRAM File: C:/Source/cgb/sram.v
+# ** Error (suppressible): (vsim-10000) C:/Source/cgb/sram.v(98): Unresolved defparam reference to 'altsyncram_component' in altsyncram_component.read_during_write_mode_port_a.
+#    Time: 0 ps  Iteration: 0  Instance: /DE0_Nano/SRAM File: C:/Source/cgb/sram.v
+# ** Error (suppressible): (vsim-10000) C:/Source/cgb/sram.v(99): Unresolved defparam reference to 'altsyncram_component' in altsyncram_component.widthad_a.
+#    Time: 0 ps  Iteration: 0  Instance: /DE0_Nano/SRAM File: C:/Source/cgb/sram.v
+# ** Error (suppressible): (vsim-10000) C:/Source/cgb/sram.v(100): Unresolved defparam reference to 'altsyncram_component' in altsyncram_component.width_a.
+#    Time: 0 ps  Iteration: 0  Instance: /DE0_Nano/SRAM File: C:/Source/cgb/sram.v
+# ** Error (suppressible): (vsim-10000) C:/Source/cgb/sram.v(101): Unresolved defparam reference to 'altsyncram_component' in altsyncram_component.width_byteena_a.
+#    Time: 0 ps  Iteration: 0  Instance: /DE0_Nano/SRAM File: C:/Source/cgb/sram.v
+# Error loading design
+# End time: 16:35:05 on Jul 10,2020, Elapsed time: 0:00:00
+# Errors: 14, Warnings: 0
+vsim work.DE0_Nano -L altera_mf -L altera -L altera_mf_ver
+# vsim work.DE0_Nano -L altera_mf -L altera -L altera_mf_ver 
+# Start time: 16:35:11 on Jul 10,2020
+# Loading work.DE0_Nano
+# Loading work.sram
+# Loading work.SM83
+# ** Error (suppressible): (vsim-10000) C:/Source/cgb/sram.v(88): Unresolved defparam reference to 'altsyncram_component' in altsyncram_component.clock_enable_input_a.
+#    Time: 0 ps  Iteration: 0  Instance: /DE0_Nano/SRAM File: C:/Source/cgb/sram.v
+# ** Error (suppressible): (vsim-10000) C:/Source/cgb/sram.v(89): Unresolved defparam reference to 'altsyncram_component' in altsyncram_component.clock_enable_output_a.
+#    Time: 0 ps  Iteration: 0  Instance: /DE0_Nano/SRAM File: C:/Source/cgb/sram.v
+# ** Error (suppressible): (vsim-10000) C:/Source/cgb/sram.v(90): Unresolved defparam reference to 'altsyncram_component' in altsyncram_component.intended_device_family.
+#    Time: 0 ps  Iteration: 0  Instance: /DE0_Nano/SRAM File: C:/Source/cgb/sram.v
+# ** Error (suppressible): (vsim-10000) C:/Source/cgb/sram.v(91): Unresolved defparam reference to 'altsyncram_component' in altsyncram_component.lpm_hint.
+#    Time: 0 ps  Iteration: 0  Instance: /DE0_Nano/SRAM File: C:/Source/cgb/sram.v
+# ** Error (suppressible): (vsim-10000) C:/Source/cgb/sram.v(92): Unresolved defparam reference to 'altsyncram_component' in altsyncram_component.lpm_type.
+#    Time: 0 ps  Iteration: 0  Instance: /DE0_Nano/SRAM File: C:/Source/cgb/sram.v
+# ** Error (suppressible): (vsim-10000) C:/Source/cgb/sram.v(93): Unresolved defparam reference to 'altsyncram_component' in altsyncram_component.numwords_a.
+#    Time: 0 ps  Iteration: 0  Instance: /DE0_Nano/SRAM File: C:/Source/cgb/sram.v
+# ** Error (suppressible): (vsim-10000) C:/Source/cgb/sram.v(94): Unresolved defparam reference to 'altsyncram_component' in altsyncram_component.operation_mode.
+#    Time: 0 ps  Iteration: 0  Instance: /DE0_Nano/SRAM File: C:/Source/cgb/sram.v
+# ** Error (suppressible): (vsim-10000) C:/Source/cgb/sram.v(95): Unresolved defparam reference to 'altsyncram_component' in altsyncram_component.outdata_aclr_a.
+#    Time: 0 ps  Iteration: 0  Instance: /DE0_Nano/SRAM File: C:/Source/cgb/sram.v
+# ** Error (suppressible): (vsim-10000) C:/Source/cgb/sram.v(96): Unresolved defparam reference to 'altsyncram_component' in altsyncram_component.outdata_reg_a.
+#    Time: 0 ps  Iteration: 0  Instance: /DE0_Nano/SRAM File: C:/Source/cgb/sram.v
+# ** Error (suppressible): (vsim-10000) C:/Source/cgb/sram.v(97): Unresolved defparam reference to 'altsyncram_component' in altsyncram_component.power_up_uninitialized.
+#    Time: 0 ps  Iteration: 0  Instance: /DE0_Nano/SRAM File: C:/Source/cgb/sram.v
+# ** Error (suppressible): (vsim-10000) C:/Source/cgb/sram.v(98): Unresolved defparam reference to 'altsyncram_component' in altsyncram_component.read_during_write_mode_port_a.
+#    Time: 0 ps  Iteration: 0  Instance: /DE0_Nano/SRAM File: C:/Source/cgb/sram.v
+# ** Error (suppressible): (vsim-10000) C:/Source/cgb/sram.v(99): Unresolved defparam reference to 'altsyncram_component' in altsyncram_component.widthad_a.
+#    Time: 0 ps  Iteration: 0  Instance: /DE0_Nano/SRAM File: C:/Source/cgb/sram.v
+# ** Error (suppressible): (vsim-10000) C:/Source/cgb/sram.v(100): Unresolved defparam reference to 'altsyncram_component' in altsyncram_component.width_a.
+#    Time: 0 ps  Iteration: 0  Instance: /DE0_Nano/SRAM File: C:/Source/cgb/sram.v
+# ** Error (suppressible): (vsim-10000) C:/Source/cgb/sram.v(101): Unresolved defparam reference to 'altsyncram_component' in altsyncram_component.width_byteena_a.
+#    Time: 0 ps  Iteration: 0  Instance: /DE0_Nano/SRAM File: C:/Source/cgb/sram.v
+# Error loading design
+# End time: 16:35:11 on Jul 10,2020, Elapsed time: 0:00:00
+# Errors: 14, Warnings: 0
+vsim work.DE0_Nano -L altera_mf -L work -L rtl_work -L altera -L altera_mf
+# vsim work.DE0_Nano -L altera_mf -L work -L rtl_work -L altera -L altera_mf 
+# Start time: 16:35:28 on Jul 10,2020
+# Loading work.DE0_Nano
+# Loading work.sram
+# Loading work.SM83
+# ** Error (suppressible): (vsim-10000) C:/Source/cgb/sram.v(88): Unresolved defparam reference to 'altsyncram_component' in altsyncram_component.clock_enable_input_a.
+#    Time: 0 ps  Iteration: 0  Instance: /DE0_Nano/SRAM File: C:/Source/cgb/sram.v
+# ** Error (suppressible): (vsim-10000) C:/Source/cgb/sram.v(89): Unresolved defparam reference to 'altsyncram_component' in altsyncram_component.clock_enable_output_a.
+#    Time: 0 ps  Iteration: 0  Instance: /DE0_Nano/SRAM File: C:/Source/cgb/sram.v
+# ** Error (suppressible): (vsim-10000) C:/Source/cgb/sram.v(90): Unresolved defparam reference to 'altsyncram_component' in altsyncram_component.intended_device_family.
+#    Time: 0 ps  Iteration: 0  Instance: /DE0_Nano/SRAM File: C:/Source/cgb/sram.v
+# ** Error (suppressible): (vsim-10000) C:/Source/cgb/sram.v(91): Unresolved defparam reference to 'altsyncram_component' in altsyncram_component.lpm_hint.
+#    Time: 0 ps  Iteration: 0  Instance: /DE0_Nano/SRAM File: C:/Source/cgb/sram.v
+# ** Error (suppressible): (vsim-10000) C:/Source/cgb/sram.v(92): Unresolved defparam reference to 'altsyncram_component' in altsyncram_component.lpm_type.
+#    Time: 0 ps  Iteration: 0  Instance: /DE0_Nano/SRAM File: C:/Source/cgb/sram.v
+# ** Error (suppressible): (vsim-10000) C:/Source/cgb/sram.v(93): Unresolved defparam reference to 'altsyncram_component' in altsyncram_component.numwords_a.
+#    Time: 0 ps  Iteration: 0  Instance: /DE0_Nano/SRAM File: C:/Source/cgb/sram.v
+# ** Error (suppressible): (vsim-10000) C:/Source/cgb/sram.v(94): Unresolved defparam reference to 'altsyncram_component' in altsyncram_component.operation_mode.
+#    Time: 0 ps  Iteration: 0  Instance: /DE0_Nano/SRAM File: C:/Source/cgb/sram.v
+# ** Error (suppressible): (vsim-10000) C:/Source/cgb/sram.v(95): Unresolved defparam reference to 'altsyncram_component' in altsyncram_component.outdata_aclr_a.
+#    Time: 0 ps  Iteration: 0  Instance: /DE0_Nano/SRAM File: C:/Source/cgb/sram.v
+# ** Error (suppressible): (vsim-10000) C:/Source/cgb/sram.v(96): Unresolved defparam reference to 'altsyncram_component' in altsyncram_component.outdata_reg_a.
+#    Time: 0 ps  Iteration: 0  Instance: /DE0_Nano/SRAM File: C:/Source/cgb/sram.v
+# ** Error (suppressible): (vsim-10000) C:/Source/cgb/sram.v(97): Unresolved defparam reference to 'altsyncram_component' in altsyncram_component.power_up_uninitialized.
+#    Time: 0 ps  Iteration: 0  Instance: /DE0_Nano/SRAM File: C:/Source/cgb/sram.v
+# ** Error (suppressible): (vsim-10000) C:/Source/cgb/sram.v(98): Unresolved defparam reference to 'altsyncram_component' in altsyncram_component.read_during_write_mode_port_a.
+#    Time: 0 ps  Iteration: 0  Instance: /DE0_Nano/SRAM File: C:/Source/cgb/sram.v
+# ** Error (suppressible): (vsim-10000) C:/Source/cgb/sram.v(99): Unresolved defparam reference to 'altsyncram_component' in altsyncram_component.widthad_a.
+#    Time: 0 ps  Iteration: 0  Instance: /DE0_Nano/SRAM File: C:/Source/cgb/sram.v
+# ** Error (suppressible): (vsim-10000) C:/Source/cgb/sram.v(100): Unresolved defparam reference to 'altsyncram_component' in altsyncram_component.width_a.
+#    Time: 0 ps  Iteration: 0  Instance: /DE0_Nano/SRAM File: C:/Source/cgb/sram.v
+# ** Error (suppressible): (vsim-10000) C:/Source/cgb/sram.v(101): Unresolved defparam reference to 'altsyncram_component' in altsyncram_component.width_byteena_a.
+#    Time: 0 ps  Iteration: 0  Instance: /DE0_Nano/SRAM File: C:/Source/cgb/sram.v
+# Error loading design
+# End time: 16:35:28 on Jul 10,2020, Elapsed time: 0:00:00
+# Errors: 14, Warnings: 0
+vsim work.DE0_Nano -L altera_mf -L work -L rtl_work -L altera -L altera_mf -r 220model
+# ** Error: (vish-3296) Unknown option '-r'.
+# Use the -help option for complete vsim usage.
+# Error loading design
+vsim work.DE0_Nano -L altera_mf -L work -L rtl_work -L altera -L altera_mf -L 220model
+# vsim work.DE0_Nano -L altera_mf -L work -L rtl_work -L altera -L altera_mf -L 220model 
+# Start time: 16:35:34 on Jul 10,2020
+# Loading work.DE0_Nano
+# Loading work.sram
+# Loading work.SM83
+# ** Error (suppressible): (vsim-10000) C:/Source/cgb/sram.v(88): Unresolved defparam reference to 'altsyncram_component' in altsyncram_component.clock_enable_input_a.
+#    Time: 0 ps  Iteration: 0  Instance: /DE0_Nano/SRAM File: C:/Source/cgb/sram.v
+# ** Error (suppressible): (vsim-10000) C:/Source/cgb/sram.v(89): Unresolved defparam reference to 'altsyncram_component' in altsyncram_component.clock_enable_output_a.
+#    Time: 0 ps  Iteration: 0  Instance: /DE0_Nano/SRAM File: C:/Source/cgb/sram.v
+# ** Error (suppressible): (vsim-10000) C:/Source/cgb/sram.v(90): Unresolved defparam reference to 'altsyncram_component' in altsyncram_component.intended_device_family.
+#    Time: 0 ps  Iteration: 0  Instance: /DE0_Nano/SRAM File: C:/Source/cgb/sram.v
+# ** Error (suppressible): (vsim-10000) C:/Source/cgb/sram.v(91): Unresolved defparam reference to 'altsyncram_component' in altsyncram_component.lpm_hint.
+#    Time: 0 ps  Iteration: 0  Instance: /DE0_Nano/SRAM File: C:/Source/cgb/sram.v
+# ** Error (suppressible): (vsim-10000) C:/Source/cgb/sram.v(92): Unresolved defparam reference to 'altsyncram_component' in altsyncram_component.lpm_type.
+#    Time: 0 ps  Iteration: 0  Instance: /DE0_Nano/SRAM File: C:/Source/cgb/sram.v
+# ** Error (suppressible): (vsim-10000) C:/Source/cgb/sram.v(93): Unresolved defparam reference to 'altsyncram_component' in altsyncram_component.numwords_a.
+#    Time: 0 ps  Iteration: 0  Instance: /DE0_Nano/SRAM File: C:/Source/cgb/sram.v
+# ** Error (suppressible): (vsim-10000) C:/Source/cgb/sram.v(94): Unresolved defparam reference to 'altsyncram_component' in altsyncram_component.operation_mode.
+#    Time: 0 ps  Iteration: 0  Instance: /DE0_Nano/SRAM File: C:/Source/cgb/sram.v
+# ** Error (suppressible): (vsim-10000) C:/Source/cgb/sram.v(95): Unresolved defparam reference to 'altsyncram_component' in altsyncram_component.outdata_aclr_a.
+#    Time: 0 ps  Iteration: 0  Instance: /DE0_Nano/SRAM File: C:/Source/cgb/sram.v
+# ** Error (suppressible): (vsim-10000) C:/Source/cgb/sram.v(96): Unresolved defparam reference to 'altsyncram_component' in altsyncram_component.outdata_reg_a.
+#    Time: 0 ps  Iteration: 0  Instance: /DE0_Nano/SRAM File: C:/Source/cgb/sram.v
+# ** Error (suppressible): (vsim-10000) C:/Source/cgb/sram.v(97): Unresolved defparam reference to 'altsyncram_component' in altsyncram_component.power_up_uninitialized.
+#    Time: 0 ps  Iteration: 0  Instance: /DE0_Nano/SRAM File: C:/Source/cgb/sram.v
+# ** Error (suppressible): (vsim-10000) C:/Source/cgb/sram.v(98): Unresolved defparam reference to 'altsyncram_component' in altsyncram_component.read_during_write_mode_port_a.
+#    Time: 0 ps  Iteration: 0  Instance: /DE0_Nano/SRAM File: C:/Source/cgb/sram.v
+# ** Error (suppressible): (vsim-10000) C:/Source/cgb/sram.v(99): Unresolved defparam reference to 'altsyncram_component' in altsyncram_component.widthad_a.
+#    Time: 0 ps  Iteration: 0  Instance: /DE0_Nano/SRAM File: C:/Source/cgb/sram.v
+# ** Error (suppressible): (vsim-10000) C:/Source/cgb/sram.v(100): Unresolved defparam reference to 'altsyncram_component' in altsyncram_component.width_a.
+#    Time: 0 ps  Iteration: 0  Instance: /DE0_Nano/SRAM File: C:/Source/cgb/sram.v
+# ** Error (suppressible): (vsim-10000) C:/Source/cgb/sram.v(101): Unresolved defparam reference to 'altsyncram_component' in altsyncram_component.width_byteena_a.
+#    Time: 0 ps  Iteration: 0  Instance: /DE0_Nano/SRAM File: C:/Source/cgb/sram.v
+# Error loading design
+# End time: 16:35:34 on Jul 10,2020, Elapsed time: 0:00:00
+# Errors: 14, Warnings: 0
+vsim work.DE0_Nano -L altera_mf -L work -L rtl_work -L altera -L altera_mf -L altera_ver
+# vsim work.DE0_Nano -L altera_mf -L work -L rtl_work -L altera -L altera_mf -L altera_ver 
+# Start time: 16:35:39 on Jul 10,2020
+# Loading work.DE0_Nano
+# Loading work.sram
+# Loading work.SM83
+# ** Error (suppressible): (vsim-10000) C:/Source/cgb/sram.v(88): Unresolved defparam reference to 'altsyncram_component' in altsyncram_component.clock_enable_input_a.
+#    Time: 0 ps  Iteration: 0  Instance: /DE0_Nano/SRAM File: C:/Source/cgb/sram.v
+# ** Error (suppressible): (vsim-10000) C:/Source/cgb/sram.v(89): Unresolved defparam reference to 'altsyncram_component' in altsyncram_component.clock_enable_output_a.
+#    Time: 0 ps  Iteration: 0  Instance: /DE0_Nano/SRAM File: C:/Source/cgb/sram.v
+# ** Error (suppressible): (vsim-10000) C:/Source/cgb/sram.v(90): Unresolved defparam reference to 'altsyncram_component' in altsyncram_component.intended_device_family.
+#    Time: 0 ps  Iteration: 0  Instance: /DE0_Nano/SRAM File: C:/Source/cgb/sram.v
+# ** Error (suppressible): (vsim-10000) C:/Source/cgb/sram.v(91): Unresolved defparam reference to 'altsyncram_component' in altsyncram_component.lpm_hint.
+#    Time: 0 ps  Iteration: 0  Instance: /DE0_Nano/SRAM File: C:/Source/cgb/sram.v
+# ** Error (suppressible): (vsim-10000) C:/Source/cgb/sram.v(92): Unresolved defparam reference to 'altsyncram_component' in altsyncram_component.lpm_type.
+#    Time: 0 ps  Iteration: 0  Instance: /DE0_Nano/SRAM File: C:/Source/cgb/sram.v
+# ** Error (suppressible): (vsim-10000) C:/Source/cgb/sram.v(93): Unresolved defparam reference to 'altsyncram_component' in altsyncram_component.numwords_a.
+#    Time: 0 ps  Iteration: 0  Instance: /DE0_Nano/SRAM File: C:/Source/cgb/sram.v
+# ** Error (suppressible): (vsim-10000) C:/Source/cgb/sram.v(94): Unresolved defparam reference to 'altsyncram_component' in altsyncram_component.operation_mode.
+#    Time: 0 ps  Iteration: 0  Instance: /DE0_Nano/SRAM File: C:/Source/cgb/sram.v
+# ** Error (suppressible): (vsim-10000) C:/Source/cgb/sram.v(95): Unresolved defparam reference to 'altsyncram_component' in altsyncram_component.outdata_aclr_a.
+#    Time: 0 ps  Iteration: 0  Instance: /DE0_Nano/SRAM File: C:/Source/cgb/sram.v
+# ** Error (suppressible): (vsim-10000) C:/Source/cgb/sram.v(96): Unresolved defparam reference to 'altsyncram_component' in altsyncram_component.outdata_reg_a.
+#    Time: 0 ps  Iteration: 0  Instance: /DE0_Nano/SRAM File: C:/Source/cgb/sram.v
+# ** Error (suppressible): (vsim-10000) C:/Source/cgb/sram.v(97): Unresolved defparam reference to 'altsyncram_component' in altsyncram_component.power_up_uninitialized.
+#    Time: 0 ps  Iteration: 0  Instance: /DE0_Nano/SRAM File: C:/Source/cgb/sram.v
+# ** Error (suppressible): (vsim-10000) C:/Source/cgb/sram.v(98): Unresolved defparam reference to 'altsyncram_component' in altsyncram_component.read_during_write_mode_port_a.
+#    Time: 0 ps  Iteration: 0  Instance: /DE0_Nano/SRAM File: C:/Source/cgb/sram.v
+# ** Error (suppressible): (vsim-10000) C:/Source/cgb/sram.v(99): Unresolved defparam reference to 'altsyncram_component' in altsyncram_component.widthad_a.
+#    Time: 0 ps  Iteration: 0  Instance: /DE0_Nano/SRAM File: C:/Source/cgb/sram.v
+# ** Error (suppressible): (vsim-10000) C:/Source/cgb/sram.v(100): Unresolved defparam reference to 'altsyncram_component' in altsyncram_component.width_a.
+#    Time: 0 ps  Iteration: 0  Instance: /DE0_Nano/SRAM File: C:/Source/cgb/sram.v
+# ** Error (suppressible): (vsim-10000) C:/Source/cgb/sram.v(101): Unresolved defparam reference to 'altsyncram_component' in altsyncram_component.width_byteena_a.
+#    Time: 0 ps  Iteration: 0  Instance: /DE0_Nano/SRAM File: C:/Source/cgb/sram.v
+# Error loading design
+# End time: 16:35:40 on Jul 10,2020, Elapsed time: 0:00:01
+# Errors: 14, Warnings: 0
+vcom -93 -work /build/swbuild/SJ/nightly/19.1std/670/l64/work/modelsim/libs/altera/vhdl/altera_mf -path {$MODEL_TECH/../altera/vhdl/src/altera_mf/altera_mf.vhd} C:/intelFPGA/19.1/modelsim_ase/altera/vhdl/src/altera_mf/altera_mf.vhd
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:36:12 on Jul 10,2020
+# vcom -reportprogress 300 -93 -work /build/swbuild/SJ/nightly/19.1std/670/l64/work/modelsim/libs/altera/vhdl/altera_mf -path $MODEL_TECH/../altera/vhdl/src/altera_mf/altera_mf.vhd C:/intelFPGA/19.1/modelsim_ase/altera/vhdl/src/altera_mf/altera_mf.vhd 
+# ** Error: (vcom-66) Execution of vlib.exe failed. Please check the error log for more details.
+# End time: 16:36:12 on Jul 10,2020, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+# C:/intelFPGA/19.1/modelsim_ase/win32aloem/vcom failed.

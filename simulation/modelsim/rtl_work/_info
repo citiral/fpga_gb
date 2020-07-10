@@ -1,0 +1,78 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/source/cgb/simulation/modelsim
+vDE0_Nano
+Z1 !s110 1594391638
+!i10b 1
+!s100 Rc=`IJWJnTTkWKzHWIG1?3
+I3_>U`1zR?5m@J:[7`>XB22
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1594390945
+8C:/Source/cgb/DE0_Nano.v
+FC:/Source/cgb/DE0_Nano.v
+L0 6
+Z3 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z4 !s108 1594391638.000000
+!s107 C:/Source/cgb/DE0_Nano.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Source/cgb|C:/Source/cgb/DE0_Nano.v|
+!i113 1
+Z5 o-vlog01compat -work work
+Z6 !s92 -vlog01compat -work work +incdir+C:/Source/cgb
+Z7 tCvgOpt 0
+n@d@e0_@nano
+vSM83
+R1
+!i10b 1
+!s100 h0[03@@l]7ojN0R6zLA]F2
+IK]PY=1[GokJEHb^Z=8I`13
+R2
+R0
+w1594390620
+8C:/Source/cgb/SM83.v
+FC:/Source/cgb/SM83.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+!s107 C:/Source/cgb/SM83.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Source/cgb|C:/Source/cgb/SM83.v|
+!i113 1
+R5
+R6
+R7
+n@s@m83
+vsram
+R1
+!i10b 1
+!s100 1K^[UPKI>^JUKcdo:OPX02
+IXSXMDFVj3SjMP>Oj2nO<^0
+R2
+R0
+w1594387215
+8C:/Source/cgb/sram.v
+FC:/Source/cgb/sram.v
+L0 40
+R3
+r1
+!s85 0
+31
+R4
+!s107 C:/Source/cgb/sram.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Source/cgb|C:/Source/cgb/sram.v|
+!i113 1
+R5
+R6
+R7

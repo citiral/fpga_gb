@@ -1,0 +1,119 @@
+vsim work.DE0_Nano
+# vsim work.DE0_Nano 
+# Start time: 16:20:09 on Jul 10,2020
+# ** Error: (vsim-3170) Could not find 'DE0_Nano'.
+#         Searched libraries:
+#             C:/source/cgb/simulation/modelsim/work
+# Error loading design
+# End time: 16:20:09 on Jul 10,2020, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+# can't read "Startup(-L)": no such element in array
+# Load canceled
+vsim work.DE0_Nano
+# vsim work.DE0_Nano 
+# Start time: 16:20:28 on Jul 10,2020
+# ** Error: (vsim-3170) Could not find 'DE0_Nano'.
+#         Searched libraries:
+#             C:/source/cgb/simulation/modelsim/work
+# Error loading design
+# End time: 16:20:28 on Jul 10,2020, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+vsim -L work -L altera work.DE0_Nano
+# vsim -L work -L altera work.DE0_Nano 
+# Start time: 16:21:19 on Jul 10,2020
+# ** Error: (vsim-3170) Could not find 'DE0_Nano'.
+#         Searched libraries:
+#             C:/source/cgb/simulation/modelsim/work
+#             C:/intelFPGA/19.1/modelsim_ase/altera/vhdl/altera
+# Error loading design
+# End time: 16:21:20 on Jul 10,2020, Elapsed time: 0:00:01
+# Errors: 1, Warnings: 0
+# Compile of DE0_Nano.v was successful.
+# can't read "Startup(-L)": no such element in array
+# Load canceled
+vsim -L work -L altera work.DE0_Nano
+# vsim -L work -L altera work.DE0_Nano 
+# Start time: 16:21:34 on Jul 10,2020
+# Loading work.DE0_Nano
+# ** Error: (vsim-3033) C:/source/cgb/DE0_Nano.v(182): Instantiation of 'sram' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /DE0_Nano File: C:/source/cgb/DE0_Nano.v
+#         Searched libraries:
+#             C:/source/cgb/simulation/modelsim/work
+#             C:/intelFPGA/19.1/modelsim_ase/altera/vhdl/altera
+# ** Error: (vsim-3033) C:/source/cgb/DE0_Nano.v(190): Instantiation of 'SM83' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /DE0_Nano File: C:/source/cgb/DE0_Nano.v
+#         Searched libraries:
+#             C:/source/cgb/simulation/modelsim/work
+#             C:/intelFPGA/19.1/modelsim_ase/altera/vhdl/altera
+# Error loading design
+# End time: 16:21:34 on Jul 10,2020, Elapsed time: 0:00:00
+# Errors: 2, Warnings: 0
+# Compile of sram.v was successful.
+vsim -L work -L altera work.DE0_Nano
+# vsim -L work -L altera work.DE0_Nano 
+# Start time: 16:22:42 on Jul 10,2020
+# Loading work.DE0_Nano
+# Loading work.sram
+# ** Error: (vsim-3033) C:/source/cgb/sram.v(63): Instantiation of 'altsyncram' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /DE0_Nano/SRAM File: C:/source/cgb/sram.v
+#         Searched libraries:
+#             C:/source/cgb/simulation/modelsim/work
+#             C:/intelFPGA/19.1/modelsim_ase/altera/vhdl/altera
+# ** Error: (vsim-3033) C:/source/cgb/DE0_Nano.v(190): Instantiation of 'SM83' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /DE0_Nano File: C:/source/cgb/DE0_Nano.v
+#         Searched libraries:
+#             C:/source/cgb/simulation/modelsim/work
+#             C:/intelFPGA/19.1/modelsim_ase/altera/vhdl/altera
+# Error loading design
+# End time: 16:22:43 on Jul 10,2020, Elapsed time: 0:00:01
+# Errors: 2, Warnings: 0
+vsim -L work -L altera -L altera_mf work.DE0_Nano
+# vsim -L work -L altera -L altera_mf work.DE0_Nano 
+# Start time: 16:23:19 on Jul 10,2020
+# Loading work.DE0_Nano
+# Loading work.sram
+# ** Error: (vsim-3033) C:/source/cgb/DE0_Nano.v(190): Instantiation of 'SM83' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /DE0_Nano File: C:/source/cgb/DE0_Nano.v
+#         Searched libraries:
+#             C:/source/cgb/simulation/modelsim/work
+#             C:/intelFPGA/19.1/modelsim_ase/altera/vhdl/altera
+#             C:/intelFPGA/19.1/modelsim_ase/altera/vhdl/altera_mf
+# Error loading design
+# End time: 16:23:19 on Jul 10,2020, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+# Compile of DE0_Nano.v was successful.
+# Compile of SM83.v was successful.
+# Compile of sram.v was successful.
+# Compile of sram_bb.v was successful.
+# 4 compiles, 0 failed with no errors.
+vsim -L work -L altera -L altera_mf work.DE0_Nano
+# vsim -L work -L altera -L altera_mf work.DE0_Nano 
+# Start time: 16:23:34 on Jul 10,2020
+# Loading work.DE0_Nano
+# Loading work.sram
+# Loading work.SM83
+# ** Warning: (vsim-3015) C:/source/cgb/DE0_Nano.v(182): [PCDPC] - Port size (8) does not match connection size (1) for port 'q'. The port definition is at: C:/source/cgb/sram_bb.v(40).
+#    Time: 0 ps  Iteration: 0  Instance: /DE0_Nano/SRAM File: C:/source/cgb/sram_bb.v
+# ** Warning: (vsim-3017) C:/source/cgb/DE0_Nano.v(190): [TFMPC] - Too few port connections. Expected 7, found 5.
+#    Time: 0 ps  Iteration: 0  Instance: /DE0_Nano/CPU File: C:/source/cgb/SM83.v
+# ** Warning: (vsim-3015) C:/source/cgb/DE0_Nano.v(190): [PCDPC] - Port size (1) does not match connection size (13) for port 'RESET'. The port definition is at: C:/source/cgb/SM83.v(7).
+#    Time: 0 ps  Iteration: 0  Instance: /DE0_Nano/CPU File: C:/source/cgb/SM83.v
+# ** Warning: (vsim-3015) C:/source/cgb/DE0_Nano.v(190): [PCDPC] - Port size (13) does not match connection size (8) for port 'SRAM_ADDRESS'. The port definition is at: C:/source/cgb/SM83.v(10).
+#    Time: 0 ps  Iteration: 0  Instance: /DE0_Nano/CPU File: C:/source/cgb/SM83.v
+# ** Warning: (vsim-3015) C:/source/cgb/DE0_Nano.v(190): [PCDPC] - Port size (8) does not match connection size (1) for port 'SRAM_DATA'. The port definition is at: C:/source/cgb/SM83.v(11).
+#    Time: 0 ps  Iteration: 0  Instance: /DE0_Nano/CPU File: C:/source/cgb/SM83.v
+# ** Warning: (vsim-3015) C:/source/cgb/DE0_Nano.v(190): [PCDPC] - Port size (8) does not match connection size (1) for port 'SRAM_Q'. The port definition is at: C:/source/cgb/SM83.v(12).
+#    Time: 0 ps  Iteration: 0  Instance: /DE0_Nano/CPU File: C:/source/cgb/SM83.v
+# ** Warning: (vsim-3722) C:/source/cgb/DE0_Nano.v(190): [TFMPC] - Missing connection for port 'SRAM_WREN'.
+run 1
+add wave -position end sim:/DE0_Nano/CPU/*
+force -drive sim:/DE0_Nano/CPU/RESET 0 0
+run 1
+run 10
+run 100
+noforce sim:/DE0_Nano/CPU/RESET
+force -freeze sim:/DE0_Nano/CPU/CLOCK 1 0, 0 {50 ps} -r 100
+run 10
+run 200
+# End time: 16:26:59 on Jul 10,2020, Elapsed time: 0:03:25
+# Errors: 0, Warnings: 7
